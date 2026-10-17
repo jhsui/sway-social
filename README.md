@@ -1,4 +1,4 @@
-# Odin Book — Sway
+# Sway
 
 Sway is a full-stack social app for sharing posts, joining conversations, and following other users. Built with React, TypeScript, Express, and PostgreSQL, it brings together authentication, image uploads, a paginated feed, and user profiles.
 
@@ -41,7 +41,7 @@ Shared page layouts and Tailwind theme tokens keep the interface consistent, wit
 ## Project structure
 
 ```text
-odin-book/
+sway-social/
 ├── backend/
 │   ├── prisma/
 │   │   ├── schema.prisma       # Data models
@@ -77,8 +77,8 @@ odin-book/
 ### 1. Clone the repository
 
 ```sh
-git clone https://github.com/jhsui/odin-book.git
-cd odin-book
+git clone https://github.com/jhsui/sway-social.git
+cd sway-social
 ```
 
 Run the commands below from the repository root unless otherwise noted. The frontend and backend have separate package manifests and lockfiles.
@@ -88,7 +88,7 @@ Run the commands below from the repository root unless otherwise noted. The fron
 Create `backend/.env`:
 
 ```dotenv
-DATABASE_URL=postgresql://postgres:your-password@localhost:5432/odin_book
+DATABASE_URL=postgresql://postgres:your-password@localhost:5432/sway
 
 BETTER_AUTH_SECRET=replace-with-a-random-secret
 BETTER_AUTH_URL=http://localhost:3000
