@@ -36,9 +36,12 @@ export default function UserProfilePage() {
     <PageShell>
       <Link
         to="/dashboard/user-index"
-        className="ui-link mb-6 inline-flex min-h-11 items-center gap-2 text-sm font-semibold"
+        className="ui-link group mb-6 inline-flex min-h-11 items-center gap-2 text-sm font-semibold hover:no-underline"
       >
-        <span aria-hidden="true">←</span> Back to people
+        <span aria-hidden="true">←</span>
+        <span className="underline-offset-4 group-hover:underline">
+          Back to people
+        </span>
       </Link>
 
       {isPending ? (
@@ -224,9 +227,12 @@ export default function UserProfilePage() {
                         </time>
                         <Link
                           to={`/posts/${comment.postId}`}
-                          className="ui-link min-h-11 items-center font-semibold"
+                          className="ui-link group inline-flex min-h-11 items-center gap-1.5 font-semibold hover:no-underline"
                         >
-                          View conversation <span aria-hidden="true">→</span>
+                          <span className="underline-offset-4 group-hover:underline">
+                            View conversation
+                          </span>
+                          <span aria-hidden="true">→</span>
                         </Link>
                       </div>
                     </article>

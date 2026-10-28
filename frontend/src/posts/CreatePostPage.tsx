@@ -121,8 +121,14 @@ export default function CreatePostPage() {
     <PageShell>
       <div className="mx-auto max-w-5xl">
         <div className="mb-7">
-          <Link to="/dashboard" className="ui-link text-sm">
-            <span aria-hidden="true">←</span> Back to Feed
+          <Link
+            to="/dashboard"
+            className="ui-link group inline-flex items-center gap-2 text-sm hover:no-underline"
+          >
+            <span aria-hidden="true">←</span>
+            <span className="underline-offset-4 group-hover:underline">
+              Back to Feed
+            </span>
           </Link>
         </div>
         <PageHeading

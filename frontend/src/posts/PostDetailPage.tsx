@@ -16,8 +16,14 @@ export default function PostDetailPage() {
   return (
     <PageShell>
       <div className="mx-auto max-w-3xl">
-        <Link to="/dashboard" className="ui-link text-sm">
-          <span aria-hidden="true">←</span> Back to Feed
+        <Link
+          to="/dashboard"
+          className="ui-link group inline-flex items-center gap-2 text-sm hover:no-underline"
+        >
+          <span aria-hidden="true">←</span>
+          <span className="underline-offset-4 group-hover:underline">
+            Back to Feed
+          </span>
         </Link>
 
         <article className="ui-card mt-7 min-w-0 overflow-hidden">

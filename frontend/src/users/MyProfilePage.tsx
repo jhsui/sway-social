@@ -537,9 +537,12 @@ export default function MyProfilePage() {
                       <div className="flex max-w-full flex-wrap items-center gap-x-4 gap-y-2 [&>div]:mt-0">
                         <Link
                           to={`/posts/${comment.postId}`}
-                          className="ui-link min-h-11 items-center py-2 text-sm font-semibold"
+                          className="ui-link group inline-flex min-h-11 items-center gap-1.5 py-2 text-sm font-semibold hover:no-underline"
                         >
-                          View conversation <span aria-hidden="true">→</span>
+                          <span className="underline-offset-4 group-hover:underline">
+                            View conversation
+                          </span>
+                          <span aria-hidden="true">→</span>
                         </Link>
 
                         <DeleteCommentButton

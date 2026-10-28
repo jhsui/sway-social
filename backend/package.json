@@ -10,7 +10,9 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "typecheck": "tsc --noEmit",
     "postinstall": "prisma generate",
-    "start": "node src/app.ts"
+    "start": "node src/app.ts",
+    "seed": "node prisma/seed.ts",
+    "seed:clear": "node prisma/clear-seed.ts"
   },
   "dependencies": {
     "@prisma/adapter-pg": "^7.9.1",
